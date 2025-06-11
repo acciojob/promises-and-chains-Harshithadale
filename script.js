@@ -9,12 +9,12 @@ document.getElementById("btn").onclick = (e)=>{
 	const myPromise = new Promise((res,rej) =>{
 		if(Number(age.value) >= 18){
 			setTimeout(()=>{
-				res(`Welcome, ${name.value}. You can vote`)
+				res(`Welcome, ${name.value}. You can vote.`)
 			,4000})
 		}
 		else{
 			setTimeout(()=>{
-				rej(`Oh sorry ${name.value}. You aren't old enough`)
+				rej(`Oh sorry ${name.value}. You aren't old enough.`)
 			},4000)
 		}
 	})
