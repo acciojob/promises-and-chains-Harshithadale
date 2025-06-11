@@ -7,7 +7,7 @@ document.getElementById("btn").onclick = (e)=>{
 		return 
 	}
 	const myPromise = new Promise((res,rej) =>{
-		if(age.value >= 18){
+		if(Number(age.value) >= 18){
 			setTimeout(()=>{
 				res(`Welcome, ${name.value}. You can vote`)
 			,4000})
