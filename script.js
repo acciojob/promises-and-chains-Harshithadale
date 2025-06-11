@@ -3,7 +3,7 @@ const name = document.getElementById("name");
 document.getElementById("btn").onclick = (e)=>{
 	e.preventDefault()
 	if(age.value == "" || name.value == ""){
-		alert("Please enter valid details.")
+		window.alert("Please enter valid details.")
 		return 
 	}
 	const myPromise = new Promise((res,rej) =>{
@@ -19,9 +19,9 @@ document.getElementById("btn").onclick = (e)=>{
 		}
 	})
 	myPromise.then(data=>{
-	alert(data)
+	window.alert(data)
 	})
 	.catch(err=>{
-		alert(err)
+		window.alert(err)
 	})
 }
